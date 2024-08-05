@@ -10,7 +10,7 @@ pipeline {
     }
 
     environment {
-        CI = false //do not treat errors as warnings
+        CI = false //do not treat errors as warning
 
     }
 
