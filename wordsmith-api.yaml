@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: wordsmith-api
-        image: jaymath237/wordsmith-api-project:latest
+        image: jaymath237/wordsmith-api:latest
         resources:
           limits:
             memory: "128Mi"
