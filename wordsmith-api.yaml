@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wordsmith-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: wordsmith-api
+  template:
+    metadata:
+      labels:
+        app: wordsmith-api
+    spec:
+      containers:
+      - name: wordsmith-api
+        image: jaymath237/wordsmith-api-project:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080

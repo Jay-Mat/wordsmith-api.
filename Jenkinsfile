@@ -25,8 +25,8 @@ pipeline {
             steps {
                 sh 'docker build -t wordsmith-api:${BUILD_NUMBER} .'
                 sh 'docker login -u jaymath237 -p Jstorm237 docker.io'
-                sh 'docker tag wordsmith-api:${BUILD_NUMBER} jaymath237/wordsmith-api-project'
-                sh 'docker push  jaymath237/wordsmith-api-project'
+                sh 'docker tag wordsmith-api:${BUILD_NUMBER} jaymath237/wordsmith-api'
+                sh 'docker push  jaymath237/wordsmith-api'
             }
         }
 
