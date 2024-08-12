@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: wordsmith-api
 spec:
+  type: NodePort
   selector:
     app: wordsmith-api
   ports:
